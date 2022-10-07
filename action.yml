@@ -2,6 +2,15 @@ name: 'SSH Remote Commands'
 description: 'Executing remote ssh commands'
 author: 'Abid Malik'
 inputs:
+  host:
+    description: 'ssh host'
+  port:
+    description: 'ssh port'
+    default: 22
+  username:
+    description: 'ssh username'
+  key:
+    description: 'content of ssh private key. ex raw content of ~/.ssh/id_rsa'
   script:
     description: 'execute commands'
 runs:
