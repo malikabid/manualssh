@@ -1,5 +1,7 @@
-#!/bin/bash
-set -e
+#!/bin/sh
+
+set -eu
 
 export GITHUB="true"
-sh -c "/bin/bash $*"
+
+sh -c "/bin/drone-ssh $*"
